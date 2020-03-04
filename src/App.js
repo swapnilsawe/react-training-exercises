@@ -1,25 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
-
+import {ReviewHeader} from './reviewExercise/component/ReveiwHeader';
+import { ReviewContainer } from './reviewExercise/component/ReviewContainer';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <header className="App-header">
+          <h2>This is react training Review exercise</h2>
+        </header>
+      </div>
+      <div className="App-sub-header">
+        <ReviewHeader headerName="Review Exercise"/>
+      </div>
+      <div className="App-container">
+        <ReviewContainer leftColVisible="true"/>
+      </div>
+    </>
   );
 }
 
